@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시간표</title>
+
+
+    <style>
+
+        table,th,td{
+            border: 1px solid black ;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            width: 100px;
+            height: 50px;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .pm{
+            background-color: rgba(0, 255, 255, 0.354) ;
+        }
+
+
+        td{
+            text-align: center;
+        }
+
+        button{
+        background-color: rgba(2    55, 255, 255, 0.616);
+        width: 105px;
+        height: 50px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <button onclick="location.href='list.html'">여행 계획</button >
+
+        <table ellcpacing="0"  cellpadding="0">
+        <caption style="margin-bottom: 20px;">
+            2024 1-3 정동일 시간표 
+        </caption>
+        <tr style="background-color: bisque;">
+            <th>시간 &Backslash; 요일</td>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+
+        <tr>
+            <th>1교시</th>
+            <td>영어</td>
+            <td>미술</td>
+            <td>진로</td>
+            <td>사회</td>
+            <td>국사</td>
+        </tr>
+        <tr>
+            <th>2교시</th>
+            <td>국어</td>
+            <td rowspan="2" class="pm">컴그</td>
+            <td rowspan="2" class="pm">음악</td>
+            <td>종교</td>
+            <td rowspan="2" class="pm">컴그</td>
+        </tr>
+        <tr>
+            <th>3교시</th>
+            <td>과학</td>
+            <td rowspan="2" class="pm">과학</td>
+        </tr>
+        <tr>
+            <th>4교시</th>
+            <td rowspan="3" class="pm">프밍</td>
+            <td>국사</td>
+            <td>사회</td>
+            <td>체육</td>
+        </tr>
+        <tr>
+            <th>5교시</th>
+            <td rowspan="2" class="pm">화면</td>
+            <td rowspan="2" class="pm">수학</td>
+            <td rowspan="2" class="pm">기초</td>
+            <td>국어</td>
+        </tr>
+        <tr>
+            <th>6교시</th>
+            <td>사회</td>
+        </tr>
+        <tr>
+            <th>7교시</th>
+            <td>국사</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>영어</td>
+        </tr>
+        <tr>
+            <td colspan="7" style="text-align: center; background-color: bisque;">노력하라~ 꿈의 실현을 위해^^</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

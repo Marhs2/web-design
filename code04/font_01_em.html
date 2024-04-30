@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트 크기 px,em,rem</title>
+
+    <style>
+        body{
+            font-size: 16px;
+
+        }
+
+        h1{
+            font-size: 3em;
+        }
+
+        p{
+            font-size: 2rem;
+        }
+        .em{
+            font-size: 2em;
+        }
+        .px{
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>1. 3em의 크기를 가진 제목( px)</h1>
+    <p>2. 1rem의 크기를 가진 단락( px)</p>
+    <div>3. 16px의 기본글자</div>
+
+    <div class="px">4. 14px 글자입니다
+        <div>4-1 16px ---? px 입니다
+            <div class="em">4-1-1 px ---?   px 글자입니다</div>
+        </div>
+    </div>
+
+    <div class="em">5.   px 글자 입니다.</div>
+
+    <div class="rem">6. rem 글자 입니다
+        <div class="em">6-1  px ---?  px 글자입니다
+            <div>6-1-1 px 글자 입니다</div>
+            <div class="rem">6-1-2  px ---?  px 글자입니다</div>
+        </div>
+    </div>
+</body>
+</html>
