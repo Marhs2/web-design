@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숙제</title>
+    <style>
+        header{
+            display: flex;
+            justify-content: center;
+        }
+
+        form > .cols{
+            display: flex;
+        }
+
+        fieldset > *{
+            margin: 5px;
+        }
+
+        legend{
+            color: red;
+            font-weight: bold;
+        }
+
+        ul,li{
+            list-style: none;
+        }
+
+        div{
+            text-align: center;
+        }
+        ul > li > label{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <form action="">
+            <fieldset>
+                <legend>로그인</legend>
+                <label for="logoin-id">아이디</label>
+                <input type="text" id="logoin-id">
+                <label for="logoin-password">비밀번호</label>
+                <input type="password" id="logoin-password">
+            </fieldset>
+            <fieldset class="cols">
+                <legend>가입하기</legend>
+                <ul>
+                    <li>
+                <label for="id">아이디 *</label>
+                <input type="text" id="id" required >
+                    </li>
+                    <li>
+                <label for="password">비밀번호 *</label>
+                <input type="password" id="password" required>
+                    </li>
+                    <li>
+                <label for="password-re">비민번호 확인 *</label>
+                <input type="text" id="password-re" required>
+                    </li>
+                    <li>
+                <label for="name">이름 *</label>
+                <input type="text" id="name" required>
+                    </li>
+                    <li>
+                <label for="email">이메일 *</label>
+                <input type="email" id="email">
+                    </li>
+                    <li>
+                <label for="tel">전화번호</label>
+                <input type="tel" id="tel" placeholder="010-0000-0000">
+                    </li>
+            </ul>
+            </fieldset>
+            <fieldset class="cols">
+                <legend>도서소개</legend>
+                <textarea id="book" cols="50" rows="10"></textarea>
+            </fieldset>
+            <div>
+            <input type="submit" value="가입하기">
+            <input type="reset" value="다시쓰기">
+            </div>
+        </form>
+    </header>
+</body>
+</html>

@@ -5,14 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>number-range-select</title>
     <style>
+        form legend{
+            font-size: 15px;
+            font-weight: bold;
+        }
 
+        form label.reg{
+            font-size: 14px;
+            float: left;
+            width: 150px;
+        }
+
+        header.center{
+            width: 450px;
+            margin: 0 auto;
+        }
+        h1{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+            border-bottom: 1px solid #333;
+            padding-bottom: 15px;
+        }
+
+        form ul li{
+            list-style: none;
+            margin: 15px 0;
+        }
+        div{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header class="center">
     <h1>서울디지텍고 지원서</h1>
     <p>2024학년도 신입색 여러분을 환영합니다.</p>
-    <hr>
     <form action="">
         <fieldset>
             <legend>등록양식</legend>
@@ -81,10 +111,19 @@
                 </li>
                 <li>
                     <label class="reg">* 트래픽 초과</label>
-                    <meter value="90" min="0" max="100"></meter>
+                    <meter  min="1024" max="10240" low="2048" high="8192" value="9126"></meter>
+                </li>
+                <li>
+                    <label class="reg">* 적절한 트래픽</label>
+                    <meter value="0.5" optimum="0.8"></meter>
                 </li>
             </ul>
         </fieldset>
+
+        <div>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        </div>
     </form>
 </header>
 </body>
