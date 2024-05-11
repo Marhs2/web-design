@@ -14,6 +14,10 @@
             display: flex;
         }
 
+        fieldset{
+            width: 800px;
+        }
+
         fieldset > *{
             margin: 5px;
         }
@@ -21,25 +25,25 @@
         legend{
             color: red;
             font-weight: bold;
+            font-size: 20px;
         }
 
         ul,li{
             list-style: none;
+            text-align: center;
+            margin: 0 20px;
         }
 
         div{
             text-align: center;
         }
 
-        ul > li > label{
-            text-align: center;
-        }
-
-
         .cols{
-            width: 95%;
             display: flex;
             justify-content: center;
+        }
+        .cols1 li{
+            margin: 20px 0;
         }
 
         .cols > ul >li{
@@ -49,19 +53,8 @@
             margin: 10px 0;
         }
 
-        .cols> ul{
-            padding: 0;
-        }
-
-        .cols1{
-            width: 100px;
-        }
-        .cols1 > ul > li{
-            margin: 20px 0;
-        }
-
-        .cols1 > ul{
-            padding: 0 20px;
+        .login{
+            text-align: center;
         }
 
         .cols1 legend{
@@ -72,23 +65,15 @@
             justify-content: space-around;
         }
 
-        li{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px;
-            width: 300px;
-        }
     </style>
 </head>
 <body>
     <header>
         <form action="">
-            <fieldset>
+            <fieldset class="login">
                 <legend>로그인</legend>
                 <label for="logoin-id">아이디</label>
                 <input type="text" id="logoin-id" autofocus>
-                <input type="text" id="logoin-id">
                 <label for="logoin-password">비밀번호</label>
                 <input type="password" id="logoin-password">
                 <input type="submit" value="로그인">
@@ -127,8 +112,13 @@
             </ul>
             </fieldset>
             <fieldset class="cols1">
-                <legend>책</legend>
+                <legend>도서 추천하기</legend>
                 <ul>
+
+                    <li>
+                        <legend>제목</legend>
+                        <input type="text" id="title" placeholder="제목">
+                    </li>
                 <li>
                     <legend>종류</legend>
                     <input type="radio" name="no1" id="sol01" checked>소설
@@ -150,25 +140,18 @@
                     <input type="checkbox" name="ty06" id="ty6">무협
                     <input type="checkbox" name="ty07" id="ty7">게임 
                     <input type="checkbox" name="ty08" id="ty8">로맨스 
-
-
-                </li>
+                </li>                
                 <li>
                     <legend>도서소개</legend>
-                    <textarea id="book" cols="80" rows="10"></textarea> 
+                    <textarea id="book" cols="100" rows="10" placeholder="줄거리"></textarea>
                 </li>
-                
                 </ul>    
             </ul>
-            </fieldset>
-            <fieldset class="cols">
-                <legend>도서소개</legend>
-                <textarea id="book" cols="70" rows="10"></textarea>
-            </fieldset>
             <div>
-            <input type="submit" value="가입하기">
-            <input type="reset" value="다시쓰기">
+                <input type="submit" value="제출">
+                <input type="reset" value="다시쓰기">
             </div>
+            </fieldset>
         </form>
     </header>
 </body>
