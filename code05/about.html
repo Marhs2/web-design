@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+        <ul class="po">
+            <li class="dor"><a href="./login.html">로그인</a></li>
+            <li class="dor"><a href="./singup.html">회원가입</a></li>
+            <li class="dor"><a href="./about.html">도서 추천하기</a></li>
+        </ul>    
+        </nav>
+    </header>
+    <main>
+    <form action="">
+        <fieldset class="cols1">
+            <legend>도서 추천하기</legend>
+            <ul>
+
+                <li>
+                    <legend>제목</legend>
+                    <input type="text" id="title" placeholder="제목">
+                </li>
+            <li>
+                <legend>종류</legend>
+                <input type="radio" name="no1" id="sol01" checked>소설
+                <input type="radio" name="no1" id="sol02">시
+                <input type="radio" name="no1" id="sol03">희곡
+                <input type="radio" name="no1" id="sol04">시나리오
+                <input type="radio" name="no1" id="sol05">드라마 대본
+                <input type="radio" name="no1" id="sol06">공연대본
+                <input type="radio" name="no1" id="sol07">노래 가사
+                <input type="radio" name="no1" id="sol08">기타
+            </li>
+            <li>
+                <legend>장르</legend>
+                <input type="checkbox" name="ty01" id="ty1" checked>추리
+                <input type="checkbox" name="ty02" id="ty2">스릴러
+                <input type="checkbox" name="ty03" id="ty3">공포
+                <input type="checkbox" name="ty04" id="ty4">과학
+                <input type="checkbox" name="ty05" id="ty5">판타지
+                <input type="checkbox" name="ty06" id="ty6">무협
+                <input type="checkbox" name="ty07" id="ty7">게임 
+                <input type="checkbox" name="ty08" id="ty8">로맨스 
+            </li>                
+            <li>
+                <legend>도서소개</legend>
+                <textarea id="book" cols="100" rows="10" placeholder="줄거리"></textarea>
+            </li>
+            </ul>    
+        </ul>
+        <div>
+            <input type="submit" value="제출">
+            <input type="reset" value="다시쓰기" >
+        </div>
+        </fieldset>
+</form>
+</main>
+
+</body>
+</html>
