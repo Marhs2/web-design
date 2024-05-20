@@ -1,8 +1,9 @@
-       *{
+
+*{
     margin: 0;
     padding: 0;
-
 }
+
 body{
     background-color: #eaeef3;
 }
@@ -81,8 +82,8 @@ main{
 .login{
     font-size: 30px;
     border-radius: 20px;
-    width: 600px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -94,12 +95,11 @@ main{
 }
 
 .login-1 li{
-    margin: 20px 0;
+    margin: 50px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-
 
 
 .login-1 li input{
@@ -109,16 +109,12 @@ main{
     border-radius: 10px;
 }
 
-.singup > input{
+.sumbit input{
     cursor: pointer;
-    height: 50px;
-    width: 150px;
-    background-color: white;
-    border-radius: 20px;
     transition: 1s;
 }
 
-.singup > input:hover{
+.sumbit input:hover{
     transition: 1s;
-    background-color:    #daff7d27;
+    background-color: #daff7d4a;
 }

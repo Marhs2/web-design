@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./about.css">
 </head>
 <body>
 
@@ -19,16 +19,16 @@
     </header>
     <main>
     <form action="">
-        <fieldset class="cols1">
+        <fieldset class="login">
             <legend>도서 추천하기</legend>
-            <ul>
+            <ul class="login-1">
 
-                <li>
-                    <legend>제목</legend>
+                <li class="title">
+                    <h3>제목</h3>
                     <input type="text" id="title" placeholder="제목">
                 </li>
             <li>
-                <legend>종류</legend>
+                <h3>종류</h3>
                 <input type="radio" name="no1" id="sol01" checked>소설
                 <input type="radio" name="no1" id="sol02">시
                 <input type="radio" name="no1" id="sol03">희곡
@@ -39,7 +39,7 @@
                 <input type="radio" name="no1" id="sol08">기타
             </li>
             <li>
-                <legend>장르</legend>
+                <h3>장르</h3>
                 <input type="checkbox" name="ty01" id="ty1" checked>추리
                 <input type="checkbox" name="ty02" id="ty2">스릴러
                 <input type="checkbox" name="ty03" id="ty3">공포
@@ -50,12 +50,12 @@
                 <input type="checkbox" name="ty08" id="ty8">로맨스 
             </li>                
             <li>
-                <legend>도서소개</legend>
-                <textarea id="book" cols="100" rows="10" placeholder="줄거리"></textarea>
+                <h3>도서소개</h3>
+                <textarea id="book" cols="90" rows="10" placeholder="줄거리" style="font-size: 20px;"></textarea>
             </li>
             </ul>    
         </ul>
-        <div>
+        <div class="sumbit">
             <input type="submit" value="제출">
             <input type="reset" value="다시쓰기" >
         </div>

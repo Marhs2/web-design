@@ -1,8 +1,9 @@
-       *{
+
+*{
     margin: 0;
     padding: 0;
-
 }
+
 body{
     background-color: #eaeef3;
 }
@@ -74,18 +75,26 @@ nav{
 
 
 main{
+    margin: 100px 0;
     display: flex;
     justify-content: center;
 }
 
+fieldset{
+    padding: 50px;
+}
+
+.title input{
+    height: 50px;
+    width: 300px;
+}
+
 .login{
+    text-align: center;
     font-size: 30px;
     border-radius: 20px;
-    width: 600px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    width: 500px;
+    height: 500px;
     background-color: #daff7da4;
 }
 
@@ -94,31 +103,23 @@ main{
 }
 
 .login-1 li{
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    margin: 10px 0;
 }
-
-
 
 .login-1 li input{
     font-size: 20px;
-    width: 300px;
-    height: 50px;
     border-radius: 10px;
 }
 
-.singup > input{
+.sumbit input{
     cursor: pointer;
-    height: 50px;
-    width: 150px;
-    background-color: white;
-    border-radius: 20px;
     transition: 1s;
+    padding: 20px;
+    width: 100px;
+    border-radius: 20px;
 }
 
-.singup > input:hover{
+.sumbit input:hover{
     transition: 1s;
-    background-color:    #daff7d27;
+    background-color: #daff7d4a;
 }
