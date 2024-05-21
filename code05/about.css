@@ -61,7 +61,7 @@ nav{
 
 .dor > a{
     transition: 1s;
-    padding: 20px;
+    padding: 40px;
     border-radius: 20px;
 }
 
@@ -92,7 +92,7 @@ fieldset{
                                                                 .login{
     text-align: center;
     font-size: 30px;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 500px;
     height: 500px;
     background-color: #daff7da4;
@@ -108,7 +108,7 @@ fieldset{
 
 .login-1 li input{
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 1px;
 }
 
 .sumbit input{
@@ -116,7 +116,7 @@ fieldset{
     transition: 1s;
     padding: 20px;
     width: 100px;
-    border-radius: 20px;
+    border-radius: 2px;
 }
 
 .sumbit input:hover{
