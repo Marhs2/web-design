@@ -89,7 +89,7 @@ fieldset{
     width: 300px;
 }
 
-.login{
+                                                                .login{
     text-align: center;
     font-size: 30px;
     border-radius: 20px;
@@ -121,5 +121,5 @@ fieldset{
 
 .sumbit input:hover{
     transition: 1s;
-    background-color: #daff7d4a;
+    background-color: #F2EFC7;
 }
