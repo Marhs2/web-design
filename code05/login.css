@@ -118,3 +118,18 @@ main{
     transition: 1s;
     background-color: #F2EFC7;
 }
+
+
+.singup button{
+    box-shadow: rgba(0, 0, 0, 0.549) 2px 2px 0 0;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+
+
+.singup button:hover{
+    color: black;
+    background-color: white;
+}
